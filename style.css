@@ -114,8 +114,15 @@ body{
     justify-content: flex-end;
     align-items: center;
 }
-.m-options{
-    display: inherit;
+.m-options {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-gap: 40px;
     gap: 40px;
     align-items: center;
     visibility: visible;
@@ -341,15 +348,29 @@ footer{
     cursor: pointer;
 }
 .footer-menu{
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
+    -webkit-gap: 3rem;
     gap: 3rem;
     font-size: 1.4rem;
     color: var(--Dark-moderate-cyan-footer);
 }
 .social-media{
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    display: flex;
+    -webkit-gap: 2rem;
     gap: 2rem;
 }
 .sm{
@@ -431,7 +452,14 @@ h5:hover{
         flex-direction: column;
     }
     .opt{
-        color: var(--Very-dark-desaturated-blue);;
+        -ms-box-orient: horizontal;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: flex;
+        color: var(--Very-dark-desaturated-blue);
     }
     .contact{
         background-color: var(--Yellow);
