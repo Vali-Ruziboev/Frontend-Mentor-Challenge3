@@ -115,15 +115,9 @@ body{
     align-items: center;
 }
 .m-options {
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-gap: 40px;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
     align-items: center;
     visibility: visible;
 }
@@ -348,30 +342,18 @@ footer{
     cursor: pointer;
 }
 .footer-menu{
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-gap: 3rem;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:3rem;
     font-size: 1.4rem;
     color: var(--Dark-moderate-cyan-footer);
 }
 .social-media{
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
+    display: grid;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    -webkit-gap: 2rem;
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
 }
 .sm{
     cursor: pointer;
@@ -433,6 +415,9 @@ h5:hover{
         padding-bottom: 2rem;
         z-index: 1;
         transition:ease-in-out;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
     }
     .m-options-toggle{
         visibility: visible;
@@ -452,13 +437,6 @@ h5:hover{
         flex-direction: column;
     }
     .opt{
-        -ms-box-orient: horizontal;
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -moz-flex;
-        display: -webkit-flex;
-        display: flex;
         color: var(--Very-dark-desaturated-blue);
     }
     .contact{
