@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://vali-ruziboev.github.io/Frontend-Mentor-Challenge3/)
 
 ## My process
 
